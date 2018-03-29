@@ -1,4 +1,2 @@
-{"user1" : {"user" : "John", "age" : 18 , "country": "USA"},
- "user2" : {"user" : "Chang", "age" : 24 , "country": "China"},
- "user3" : {"user" : "Pooja", "age" : 22 , "country": "India"}
+{"arr": ["abc","xyz",4]
 }
