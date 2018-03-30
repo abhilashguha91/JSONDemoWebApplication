@@ -11,8 +11,8 @@ function ajax_get_json(){
     // Create our XMLHttpRequest object
     var hr = new XMLHttpRequest();
 
-	hr.open("GET", "myObject.json", true);
-	//hr.open("GET", "myList.json", true);
+	//hr.open("GET", "myObject.json", true);
+	hr.open("GET", "myList.json", true);
     
 	// Set content type header information with the JSON MIME type
     hr.setRequestHeader("Content-type", "application/json");
@@ -23,12 +23,12 @@ function ajax_get_json(){
 		    var return_data = JSON.parse(hr.responseText);
 		    var resultDiv = document.getElementById("results");
 		    
-		    resultDiv.innerHTML = return_data.user + " is " + return_data.age + " years old and lives in "+return_data.country+".";
+		    //resultDiv.innerHTML = return_data.user + " is " + return_data.age + " years old and lives in "+return_data.country+".";
 			
-		    /* for(var obj in return_data){
+		     for(var obj in return_data){
 		    	
 		    	results.innerHTML += return_data[obj].user + " is in my list. <br />"; 
-		     }*/
+		     }
 		    
 	    }
     }
